@@ -26,7 +26,7 @@ const sidebarItems = [
     {
         name: 'My Wallet',
         icon: <CiWallet className="text-2xl hover:text-blue-700" />,
-        path: 'my-wallet'
+        path: 'myWallet'
     }
 ]
 const Siderbar = () => {
