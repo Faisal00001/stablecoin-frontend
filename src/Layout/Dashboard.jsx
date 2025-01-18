@@ -1,13 +1,20 @@
 import { Outlet } from "react-router-dom";
 import Siderbar from "../components/common/Sidebar/Siderbar";
+import Header from "../components/common/Header/Header";
 
 const Dashboard = () => {
 
     return (
-        <div className='flex h-screen  overflow-hidden'>
-            <Siderbar></Siderbar>
-            <Outlet></Outlet>
-
+        <div className="h-screen flex flex-col">
+            <div>
+                <Header title="Brex" />
+            </div>
+            <div className="flex flex-1 overflow-hidden">
+                <Siderbar />
+                <div className="flex-1 overflow-y-auto">
+                    <Outlet />
+                </div>
+            </div>
         </div>
     );
 };
