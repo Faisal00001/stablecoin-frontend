@@ -7,7 +7,7 @@ const Dashboard = () => {
     return (
         <div className="h-screen flex flex-col">
             <div>
-                <Header title="Brex" />
+                <Header title="Node" />
             </div>
             <div className="flex flex-1 overflow-hidden">
                 <Siderbar />
