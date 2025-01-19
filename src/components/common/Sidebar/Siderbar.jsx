@@ -30,10 +30,10 @@ const sidebarItems = [
     }
 ]
 const Siderbar = () => {
-    const [isSidebarOpen, setIsSidebarOpen] = useState(true)
+    const [isSidebarOpen, setIsSidebarOpen] = useState(false)
     return (
         <motion.div
-            className={`h-screen relative z-10 transition-all duration-300 ease-in-out flex-shrink-0 ${isSidebarOpen ? "w-64" : "w-20"
+            className={`h-screen relative z-10 transition-all duration-300 ease-in-out flex-shrink-0  ${isSidebarOpen ? "w-64" : "w-20"
                 }`}
             animate={{ width: isSidebarOpen ? 256 : 90 }}
         >

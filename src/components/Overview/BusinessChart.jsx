@@ -91,7 +91,7 @@ const BusinessChart = () => {
                     <CustomLegend />
                 </div>
             </div>
-            <div className='h-40'>
+            <div className='h-48'>
                 <ResponsiveContainer width={"100%"} height={"100%"}>
                     <AreaChart
                         width={500}
