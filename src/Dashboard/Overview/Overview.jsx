@@ -6,12 +6,15 @@ import { CiWallet } from "react-icons/ci";
 import SalesOverViewChart from "../../components/Overview/SalesOverViewChart";
 import { IoIosInformationCircleOutline } from "react-icons/io";
 import BusinessChart from "../../components/Overview/BusinessChart";
-import { FaArrowRightLong, FaPlus } from "react-icons/fa6";
+import { FaPlus } from "react-icons/fa6";
 import { FaArrowRight } from "react-icons/fa6";
 import { IoIosMore } from "react-icons/io";
 import Tabs from "../../components/Overview/Tabs";
+import { useState } from "react";
+import ManageRulesDrawer from "../../components/Overview/ManageRulesDrawer";
 
 const Overview = () => {
+
     return (
         <div className="flex-1 overflow-auto relative">
             <main className="py-6 px-4 lg:px-8">
@@ -125,10 +128,8 @@ const Overview = () => {
                         <p className="text-sm font-bold ">
                             Auto-transfer
                         </p>
-                        <div className="flex gap-2 items-center cursor-pointer group">
-                            <p className="group-hover:underline text-sm">Manage rules</p>
-                            <span><FaArrowRightLong /></span>
-                        </div>
+                        {/* Manage rules drawer */}
+                        <ManageRulesDrawer></ManageRulesDrawer>
 
                     </div>
                 </div>

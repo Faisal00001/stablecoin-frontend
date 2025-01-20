@@ -1,7 +1,8 @@
 import { IoMdMore } from "react-icons/io";
 import { IoSettingsOutline } from "react-icons/io5";
-
-
+import { SiPayloadcms } from "react-icons/si";
+import { GoGraph } from "react-icons/go";
+import { FiDownload } from "react-icons/fi";
 const Tabs = () => {
     return (
 
@@ -69,116 +70,151 @@ const Tabs = () => {
                                     </tr>
                                 </thead>
                                 <tbody className="border-[1px] border-gray-200">
-                                    <tr className="bg-white">
-                                        <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap  border-[1px] border-gray-200 ">
-                                            Apple MacBook Pro 17"
+                                    <tr className="bg-white h-16">
+                                        <th scope="row" className="px-6 py-4  whitespace-nowrap  border-[1px] border-gray-200 ">
+                                            <div className="flex gap-2 items-center">
+                                                <div className="bg-[#001A6E] w-6 h-6 flex justify-center items-center rounded-full">
+                                                    <SiPayloadcms className="text-sm text-white" />
+                                                </div>
+                                                <div>
+                                                    <p className="font-bold">Primary checking</p>
+                                                    <p className="text-xs text-gray-500">Checking .... 1111</p>
+                                                </div>
+
+                                            </div>
                                         </th>
                                         <td className="px-6 py-4 border-[1px] border-gray-200">
-                                            Silver
+                                            <div className="flex gap-2 items-center">
+                                                <FiDownload className="text-xl" />
+                                                <p className="font-bold">August 2024</p>
+                                            </div>
                                         </td>
                                         <td className="px-6 py-4 border-[1px] border-gray-200 text-right">
-                                            Laptop
+                                            <p className="font-bold">+$413,938.00</p>
                                         </td>
                                         <td className="px-6 py-4 border-[1px] border-gray-200 text-right">
-                                            $2999
+                                            <p className="font-bold"> -$413,938.00</p>
                                         </td>
                                         <td className="px-6 py-4 border-[1px] border-gray-200 text-right">
-                                            $2999
+                                            <p className="font-bold">$413,938.00</p>
                                         </td>
-                                        <td className="px-6 py-4 flex justify-center items-center border-b-[1px] border-b-gray-200">
-                                            <div className="w-8 h-8 rounded border border-gray-200 flex items-center justify-center shadow cursor-pointer">
-                                                <IoMdMore className="text-xl" />
+                                        <td className="px-6 py-4 border border-gray-200 ">
+                                            <div className="flex justify-center items-center">
+                                                <div className="w-8 h-8 rounded border border-gray-200 flex items-center justify-center shadow cursor-pointer">
+                                                    <IoMdMore className="text-xl" />
+                                                </div>
                                             </div>
                                         </td>
                                     </tr>
                                     <tr className="bg-white">
-                                        <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap  border-[1px] border-gray-200 ">
-                                            Apple MacBook Pro 17"
+                                        <th scope="row" className="px-6 py-4  whitespace-nowrap  border-[1px] border-gray-200 ">
+                                            <div className="flex gap-2 items-center">
+                                                <div className="bg-[#001A6E] w-6 h-6 flex justify-center items-center rounded-full">
+                                                    <SiPayloadcms className="text-sm text-white" />
+                                                </div>
+                                                <div>
+                                                    <p className="font-bold">Payroll</p>
+                                                    <p className="text-xs text-gray-500">Checking .... 1112</p>
+                                                </div>
+
+                                            </div>
                                         </th>
                                         <td className="px-6 py-4 border-[1px] border-gray-200">
-                                            Silver
+                                            <div className="flex gap-2 items-center">
+                                                <FiDownload className="text-xl" />
+                                                <p className="font-bold">August 2024</p>
+                                            </div>
                                         </td>
                                         <td className="px-6 py-4 border-[1px] border-gray-200 text-right">
-                                            Laptop
+                                            <p className="font-bold">+$413,938.00</p>
                                         </td>
                                         <td className="px-6 py-4 border-[1px] border-gray-200 text-right">
-                                            $2999
+                                            <p className="font-bold"> -$413,938.00</p>
                                         </td>
                                         <td className="px-6 py-4 border-[1px] border-gray-200 text-right">
-                                            $2999
+                                            <p className="font-bold">$413,938.00</p>
                                         </td>
-                                        <td className="px-6 py-4 flex justify-center items-center border-b-[1px] border-b-gray-200">
-                                            <div className="w-8 h-8 rounded border border-gray-200 flex items-center justify-center shadow cursor-pointer">
-                                                <IoMdMore className="text-xl" />
+                                        <td className="px-6 py-4 border border-gray-200 ">
+                                            <div className="flex justify-center items-center">
+                                                <div className="w-8 h-8 rounded border border-gray-200 flex items-center justify-center shadow cursor-pointer">
+                                                    <IoMdMore className="text-xl" />
+                                                </div>
                                             </div>
                                         </td>
                                     </tr>
                                     <tr className="bg-white">
-                                        <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap  border-[1px] border-gray-200 ">
-                                            Apple MacBook Pro 17"
+                                        <th scope="row" className="px-6 py-4  whitespace-nowrap  border-[1px] border-gray-200 ">
+                                            <div className="flex gap-2 items-center">
+                                                <div className="bg-[#4DA1A9] w-6 h-6 flex justify-center items-center rounded-full">
+                                                    <GoGraph className="text-sm text-white" />
+                                                </div>
+                                                <div>
+                                                    <p className="font-bold">Treasury</p>
+
+                                                </div>
+
+                                            </div>
                                         </th>
                                         <td className="px-6 py-4 border-[1px] border-gray-200">
-                                            Silver
+                                            <div className="flex gap-2 items-center">
+                                                <FiDownload className="text-xl" />
+                                                <p className="font-bold">August 2024</p>
+                                            </div>
                                         </td>
                                         <td className="px-6 py-4 border-[1px] border-gray-200 text-right">
-                                            Laptop
+                                            <p className="font-bold">+$413,938.00</p>
                                         </td>
                                         <td className="px-6 py-4 border-[1px] border-gray-200 text-right">
-                                            $2999
+                                            <p className="font-bold"> -$413,938.00</p>
                                         </td>
                                         <td className="px-6 py-4 border-[1px] border-gray-200 text-right">
-                                            $2999
+                                            <p className="font-bold">$413,938.00</p>
                                         </td>
-                                        <td className="px-6 py-4 flex justify-center items-center border-b-[1px] border-b-gray-200">
-                                            <div className="w-8 h-8 rounded border border-gray-200 flex items-center justify-center shadow cursor-pointer">
-                                                <IoMdMore className="text-xl" />
+                                        <td className="px-6 py-4 border border-gray-200 ">
+                                            <div className="flex justify-center items-center">
+                                                <div className="w-8 h-8 rounded border border-gray-200 flex items-center justify-center shadow cursor-pointer">
+                                                    <IoMdMore className="text-xl" />
+                                                </div>
                                             </div>
                                         </td>
                                     </tr>
                                     <tr className="bg-white">
-                                        <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap  border-[1px] border-gray-200 ">
-                                            Apple MacBook Pro 17"
+                                        <th scope="row" className="px-6 py-4  whitespace-nowrap  border-[1px] border-gray-200 ">
+                                            <div className="flex gap-2 items-center">
+                                                <div className="bg-[#78B3CE] w-6 h-6 flex justify-center items-center rounded-full">
+                                                    <GoGraph className="text-sm text-white" />
+                                                </div>
+                                                <div>
+                                                    <p className="font-bold">Vault</p>
+
+                                                </div>
+
+                                            </div>
                                         </th>
                                         <td className="px-6 py-4 border-[1px] border-gray-200">
-                                            Silver
+                                            <div className="flex gap-2 items-center">
+                                                <FiDownload className="text-xl" />
+                                                <p className="font-bold">August 2024</p>
+                                            </div>
                                         </td>
                                         <td className="px-6 py-4 border-[1px] border-gray-200 text-right">
-                                            Laptop
+                                            <p className="font-bold">$0.00</p>
                                         </td>
                                         <td className="px-6 py-4 border-[1px] border-gray-200 text-right">
-                                            $2999
+                                            <p className="font-bold">$0.00</p>
                                         </td>
                                         <td className="px-6 py-4 border-[1px] border-gray-200 text-right">
-                                            $2999
+                                            <p className="font-bold">$413,938.00</p>
                                         </td>
-                                        <td className="px-6 py-4 flex justify-center items-center border-b-[1px] border-b-gray-200">
-                                            <div className="w-8 h-8 rounded border border-gray-200 flex items-center justify-center shadow cursor-pointer">
-                                                <IoMdMore className="text-xl" />
+                                        <td className="px-6 py-4 border border-gray-200 ">
+                                            <div className="flex justify-center items-center">
+                                                <div className="w-8 h-8 rounded border border-gray-200 flex items-center justify-center shadow cursor-pointer">
+                                                    <IoMdMore className="text-xl" />
+                                                </div>
                                             </div>
                                         </td>
                                     </tr>
-                                    <tr className="bg-white">
-                                        <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap  border-[1px] border-gray-200 ">
-                                            Apple MacBook Pro 17"
-                                        </th>
-                                        <td className="px-6 py-4 border-[1px] border-gray-200">
-                                            Silver
-                                        </td>
-                                        <td className="px-6 py-4 border-[1px] border-gray-200 text-right">
-                                            Laptop
-                                        </td>
-                                        <td className="px-6 py-4 border-[1px] border-gray-200 text-right">
-                                            $2999
-                                        </td>
-                                        <td className="px-6 py-4 border-[1px] border-gray-200 text-right">
-                                            $2999
-                                        </td>
-                                        <td className="px-6 py-4 flex justify-center items-center border-b-[1px] border-b-gray-200">
-                                            <div className="w-8 h-8 rounded border border-gray-200 flex items-center justify-center shadow cursor-pointer">
-                                                <IoMdMore className="text-xl" />
-                                            </div>
-                                        </td>
-                                    </tr>
+
 
 
 

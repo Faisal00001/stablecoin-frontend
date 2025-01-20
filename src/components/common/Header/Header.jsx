@@ -5,12 +5,12 @@ import { AiOutlineQuestionCircle } from "react-icons/ai";
 import { FaAngleDown } from "react-icons/fa6";
 const Header = ({ title }) => {
     return (
-        <header className='border-b border-gray-200 w-full'>
+        <header className='border-b border-gray-200 w-full z-50'>
             <div className='py-4 px-4 sm:px-6 lg:px-5'>
                 <div className="flex justify-between items-center">
                     <div className="flex gap-2">
                         <IoLogoFoursquare className="text-3xl" />
-                        <h1 className='text-2xl font-semibold text-black'>{title}</h1>
+                        <h1 className='text-2xl font-semibold text-black uppercase'>{title}</h1>
 
                     </div>
                     <div className="flex gap-3">
@@ -40,11 +40,7 @@ const Header = ({ title }) => {
                                 <li><a>Item 2</a></li>
                             </ul>
                         </div>
-                        {/* <div className="avatar">
-                            <div className="w-10 rounded-full">
-                                <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
-                            </div>
-                        </div> */}
+
                     </div>
                 </div>
             </div>

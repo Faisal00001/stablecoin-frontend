@@ -38,8 +38,8 @@ const data = [
 ];
 const seriesConfig = [
     { key: 'Checking', color: '#001A6E' },
-    { key: 'Treasury', color: '#80C4E9' },
-    { key: 'Vault', color: '#C4D9FF' }
+    { key: 'Treasury', color: '#4DA1A9' },
+    { key: 'Vault', color: '#78B3CE' }
 ];
 const BusinessChart = () => {
     const [selectedSeries, setSelectedSeries] = useState(null);
@@ -120,10 +120,10 @@ const BusinessChart = () => {
                             <Area type="monotone" dataKey="Checking" stackId="1" stroke="#001A6E" fill="#001A6E" fillOpacity={0.9} />
                         )}
                         {(selectedSeries === null || selectedSeries === 'Treasury') && (
-                            <Area type="monotone" dataKey="Treasury" stackId="1" stroke="#80C4E9" fill="#80C4E9" fillOpacity={0.9} />
+                            <Area type="monotone" dataKey="Treasury" stackId="1" stroke="#4DA1A9" fill="#4DA1A9" fillOpacity={0.9} />
                         )}
                         {(selectedSeries === null || selectedSeries === 'Vault') && (
-                            <Area type="monotone" dataKey="Vault" stackId="1" stroke="#C4D9FF" fill="#C4D9FF" fillOpacity={0.9} />
+                            <Area type="monotone" dataKey="Vault" stackId="1" stroke="#78B3CE" fill="#78B3CE" fillOpacity={0.7} />
                         )}
                     </AreaChart>
                 </ResponsiveContainer>
