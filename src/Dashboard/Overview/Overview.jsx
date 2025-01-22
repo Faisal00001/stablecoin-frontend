@@ -12,6 +12,10 @@ import { IoIosMore } from "react-icons/io";
 import Tabs from "../../components/Overview/Tabs";
 import { useState } from "react";
 import ManageRulesDrawer from "../../components/Overview/ManageRulesDrawer";
+import BalanceSummary from "../../components/Overview/BalanceSummary";
+
+import OverviewPieChart from "../../components/Overview/OverviewPieChart";
+import OverviewBarChart from "../../components/Overview/OverviewBarChart";
 
 const Overview = () => {
 
@@ -28,29 +32,53 @@ const Overview = () => {
                     
                 </motion.div> */}
                 <h3 className="text-2xl font-bold">All business accounts</h3>
-                <div className="mt-10 flex gap-10">
-                    <div className="flex gap-20 w-[75%] border-b-[1px] border-b-gray-200 ">
-                        <div className="space-y-5 w-[30%]">
-                            <h3 className="font-bold text-lg">Total balance</h3>
-                            <p className="text-3xl font-bold">$5,999,567.25</p>
-                            <div className="flex gap-2 items-center">
-                                <p>
-                                    $112,241,21.98
-                                </p>
-                                <p>pending</p>
-                                <span>
-                                    <IoIosInformationCircleOutline className="text-xl" />
-                                </span>
+                <div className="mt-10">
+                    <div className="flex flex-col lg:flex-row gap-10 items-center">
+                        <div className="w-full lg:w-[40%]">
+                            <BalanceSummary />
+                        </div>
+                        <div className="w-full space-y-5 md:space-y-0 lg:w-[60%] flex flex-col md:flex-row gap-5 items-center">
+                            <div className="w-full md:w-[70%]">
+                                <OverviewBarChart />
+                            </div>
+                            <div className="w-full md:w-[30%]">
+                                <OverviewPieChart />
                             </div>
                         </div>
-                        <div className="w-[70%]">
-                            <BusinessChart />
+                    </div>
+
+                </div>
+
+
+                <div>
+
+                </div>
+                <div className="flex flex-col space-y-10 lg:space-y-0 lg:flex-row lg:justify-between lg:items-center mt-10">
+                    {/* Money record */}
+                    <div className="flex flex-wrap gap-6 sm:gap-4 sm:flex-col md:flex-row lg:gap-14">
+                        <div className="space-y-2">
+                            <p className="text-sm font-bold">Money in this month</p>
+                            <p className="text-sm">+125,873.65</p>
+                        </div>
+                        <div className="space-y-2">
+                            <p className="text-sm font-bold">Money out this month</p>
+                            <p className="text-sm">+125,873.65</p>
+                        </div>
+                        <div className="space-y-2">
+                            <p className="text-sm font-bold">Lifetime yield earned</p>
+                            <p className="text-green-500 text-sm">-125,873.65</p>
+                        </div>
+                        <div className="space-y-2">
+                            <p className="text-sm font-bold">Auto-transfer</p>
+                            {/* Manage rules drawer */}
+                            <ManageRulesDrawer></ManageRulesDrawer>
                         </div>
                     </div>
-                    <div className="w-[25%] flex flex-col gap-3">
-                        <div className="flex justify-between w-80 p-3 rounded-lg bg-[#FFF7FC] shadow">
+                    {/* Actions */}
+                    <div className="space-y-3 sm:w-full lg:w-auto">
+                        <div className="flex justify-between w-full md:w-80 p-3 rounded-lg bg-[#FFF7FC] shadow">
                             <div className="space-y-2">
-                                <h1 className="text-lg font-bold">Send money</h1>
+                                <h1 className="text-lg font-bold">Deposit funds</h1>
                                 <p className="text-sm text-gray-500">Via ACH, wire, or check</p>
                             </div>
                             <div className="flex items-center justify-center w-7 h-7 bg-orange-500 rounded-full">
@@ -59,9 +87,9 @@ const Overview = () => {
                                 </span>
                             </div>
                         </div>
-                        <div className="flex justify-between w-80 p-3 rounded-lg bg-[#FFF7FC] shadow">
+                        <div className="flex justify-between w-full md:w-80 p-3 rounded-lg bg-[#FFF7FC] shadow">
                             <div className="space-y-2">
-                                <h1 className="text-lg font-bold">Transfer money</h1>
+                                <h1 className="text-lg font-bold">Withdraw funds</h1>
                                 <p className="text-sm text-gray-500">Between your accounts</p>
                             </div>
                             <div className="flex items-center justify-center w-7 h-7 bg-orange-500 rounded-full">
@@ -70,9 +98,9 @@ const Overview = () => {
                                 </span>
                             </div>
                         </div>
-                        <div className="flex justify-between w-80 p-3 rounded-lg bg-[#FFF7FC] shadow">
+                        <div className="flex justify-between w-full md:w-80 p-3 rounded-lg bg-[#FFF7FC] shadow">
                             <div className="space-y-2">
-                                <h1 className="text-lg font-bold">Add funds</h1>
+                                <h1 className="text-lg font-bold">Transfer stablecoins</h1>
                                 <p className="text-sm text-gray-500">To your checking account</p>
                             </div>
                             <div className="flex items-center justify-center w-7 h-7 bg-orange-500 rounded-full">
@@ -81,10 +109,9 @@ const Overview = () => {
                                 </span>
                             </div>
                         </div>
-                        <div className="flex justify-between w-80 p-3 rounded-lg bg-[#FFF7FC] shadow">
+                        <div className="flex justify-between w-full md:w-80 p-3 rounded-lg bg-[#FFF7FC] shadow">
                             <div className="space-y-2">
                                 <h1 className="text-lg font-bold">More actions</h1>
-
                             </div>
                             <div className="flex items-center justify-center w-7 h-7 bg-orange-500 rounded-full">
                                 <span>
@@ -92,47 +119,9 @@ const Overview = () => {
                                 </span>
                             </div>
                         </div>
-
-
                     </div>
                 </div>
-                <div className="flex gap-20 items-center mt-8">
-                    <div className="space-y-2">
-                        <p className="text-sm font-bold">
-                            Money in this month
-                        </p>
-                        <p className="text-sm">
-                            +125,873.65
-                        </p>
 
-                    </div>
-                    <div className="space-y-2">
-                        <p className="text-sm font-bold">
-                            Money out this month
-                        </p>
-                        <p className="text-sm">
-                            +125,873.65
-                        </p>
-
-                    </div>
-                    <div className="space-y-2">
-                        <p className="text-sm font-bold">
-                            Lifetime yield earned
-                        </p>
-                        <p className="text-green-500 text-sm">
-                            -125,873.65
-                        </p>
-
-                    </div>
-                    <div className="space-y-2 ">
-                        <p className="text-sm font-bold ">
-                            Auto-transfer
-                        </p>
-                        {/* Manage rules drawer */}
-                        <ManageRulesDrawer></ManageRulesDrawer>
-
-                    </div>
-                </div>
 
                 {/* Tabs */}
                 <div className="mt-10 w-full">

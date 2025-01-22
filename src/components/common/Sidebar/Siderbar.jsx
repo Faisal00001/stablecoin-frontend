@@ -1,11 +1,11 @@
 import { TiHomeOutline } from "react-icons/ti";
-import { IoMdNotificationsOutline } from "react-icons/io";
 import { GrTechnology } from "react-icons/gr";
 import { CiWallet } from "react-icons/ci";
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { CiMenuFries } from "react-icons/ci";
 import { Link } from "react-router-dom";
+import { MdAccountBalance } from "react-icons/md";
 
 const sidebarItems = [
     {
@@ -14,9 +14,9 @@ const sidebarItems = [
         path: 'overview'
     },
     {
-        name: 'Notifications',
-        icon: <IoMdNotificationsOutline className="text-2xl hover:text-blue-700" />,
-        path: 'notifications'
+        name: 'Balance Management',
+        icon: <MdAccountBalance className="text-2xl hover:text-blue-700" />,
+        path: 'stableCoinBalanceManagement'
     },
     {
         name: 'Market',

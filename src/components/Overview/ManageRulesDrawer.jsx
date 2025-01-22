@@ -86,7 +86,7 @@ const ManageRulesDrawer = () => {
 
                                 {activeTab === "tab1" && (
                                     <div className="mb-5">
-                                        <div className="w-full max-w-md p-4 border border-gray-200 rounded-lg">
+                                        <div className="w-full  p-4 border border-gray-200 rounded-lg">
                                             <div className="flex justify-between items-center">
                                                 <h2 className="font-bold text-sm">Payment approvals</h2>
                                                 <div className="w-8 h-8 rounded-full bg-[#F5F7F8] flex justify-center items-center">
@@ -109,7 +109,7 @@ const ManageRulesDrawer = () => {
                                                 <li> Recurring monthly transfer to Primary checking: $80,000.00</li>
                                             </ul>
                                         </div>
-                                        <div className="w-full mt-5 max-w-md p-4 border border-gray-200 rounded-lg">
+                                        <div className="w-full mt-5 p-4 border border-gray-200 rounded-lg">
                                             <div className="flex justify-between items-center">
                                                 <h2 className="font-bold text-sm">Payment approvals</h2>
                                                 <div className="w-8 h-8 rounded-full bg-[#F5F7F8] flex justify-center items-center">
@@ -139,7 +139,7 @@ const ManageRulesDrawer = () => {
                                 )}
                                 {activeTab === "tab2" && (
                                     <div className="mb-5">
-                                        <div className="w-full max-w-md p-4 border border-gray-200 rounded-lg">
+                                        <div className="w-full p-4 border border-gray-200 rounded-lg">
                                             <div className="flex justify-between items-center">
                                                 <h2 className="font-bold text-sm">Auto-transfer rules</h2>
                                                 <div className="w-8 h-8 rounded-full bg-[#F5F7F8] flex justify-center items-center">
@@ -164,7 +164,7 @@ const ManageRulesDrawer = () => {
                                                 <li> Recurring monthly transfer to Primary checking: $80,000.00</li>
                                             </ul>
                                         </div>
-                                        <div className="w-full mt-5 max-w-md p-4 border border-gray-200 rounded-lg">
+                                        <div className="w-full mt-5 p-4 border border-gray-200 rounded-lg">
                                             <div className="flex justify-between items-center">
                                                 <h2 className="font-bold text-sm">Auto-transfer rules</h2>
                                                 <div className="w-8 h-8 rounded-full bg-[#F5F7F8] flex justify-center items-center">
@@ -187,7 +187,7 @@ const ManageRulesDrawer = () => {
                                                 <li> Recurring monthly transfer to Primary checking: $80,000.00</li>
                                             </ul>
                                         </div>
-                                        <div className="w-full mt-5 max-w-md p-4 border border-gray-200 rounded-lg">
+                                        <div className="w-full mt-5  p-4 border border-gray-200 rounded-lg">
                                             <div className="flex justify-between items-center">
                                                 <h2 className="font-bold text-sm">Auto-transfer rules</h2>
                                                 <div className="w-8 h-8 rounded-full bg-[#F5F7F8] flex justify-center items-center">
