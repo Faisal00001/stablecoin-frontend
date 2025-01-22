@@ -11,7 +11,7 @@ const Header = ({ title }) => {
                 <div className="flex flex-col sm:flex-row justify-between items-center">
                     <div className="flex gap-2 items-center">
                         <IoLogoFoursquare className="text-3xl" />
-                        <h1 className='text-2xl font-semibold text-black uppercase'>{title}</h1>
+                        <Link to={'/'}><h1 className='text-2xl font-semibold text-black uppercase cursor-pointer'>{title}</h1></Link>
                     </div>
                     <div className="flex gap-3 mt-4 sm:mt-0">
                         <div className="w-8 h-8 rounded border border-gray-200 flex items-center justify-center shadow">
