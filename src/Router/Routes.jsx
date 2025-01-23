@@ -11,6 +11,7 @@ import Market from "../Dashboard/Market/Market";
 import MyWallet from "../Dashboard/MyWallet/MyWallet";
 import Home from "../Pages/Home/Home";
 import StableCoinBalanceManagement from "../Dashboard/StableCoinBalanceManagement/StableCoinBalanceManagement";
+import TransactionsHistory from "../Dashboard/TransactionsHistory/TransactionsHistory";
 
 const router = createBrowserRouter([
     {
@@ -45,8 +46,8 @@ const router = createBrowserRouter([
                 element: <StableCoinBalanceManagement></StableCoinBalanceManagement>
             },
             {
-                path: 'market',
-                element: <Market></Market>
+                path: 'transactionHistory',
+                element: <TransactionsHistory></TransactionsHistory>
             },
             {
                 path: 'myWallet',

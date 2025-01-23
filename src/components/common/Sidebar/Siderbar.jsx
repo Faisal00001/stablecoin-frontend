@@ -6,7 +6,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { CiMenuFries } from "react-icons/ci";
 import { Link } from "react-router-dom";
 import { MdAccountBalance } from "react-icons/md";
-
+import { AiOutlineTransaction } from "react-icons/ai";
 const sidebarItems = [
     {
         name: 'Dashboard',
@@ -19,9 +19,9 @@ const sidebarItems = [
         path: 'stableCoinBalanceManagement'
     },
     {
-        name: 'Market',
-        icon: <GrTechnology className="text-2xl hover:text-blue-700" />,
-        path: 'market'
+        name: 'Transaction Histroy',
+        icon: <AiOutlineTransaction className="text-2xl hover:text-blue-700" />,
+        path: 'transactionHistory'
     },
     {
         name: 'My Wallet',

@@ -15,8 +15,8 @@ const Tabs = () => {
             <div role="tabpanel" className="tab-content border-t-[1.5px]  border-t-gray-200">
                 <div className="pt-5">
                     {/* Search  */}
-                    <div className="flex gap-5 items-center justify-between">
-                        <form className="w-[85%]">
+                    <div className="flex gap-5 items-center justify-between flex-col md:flex-row">
+                        <form className="w-full md:w-[85%]">
                             <label htmlFor="default-search" className="mb-2 text-sm font-medium text-gray-900 sr-only ">Search</label>
                             <div className="relative">
                                 <div className="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
@@ -28,7 +28,7 @@ const Tabs = () => {
 
                             </div>
                         </form>
-                        <div className="w-[15%]">
+                        <div className="w-full md:w-[15%] flex items-center md:flex-none">
                             <div className="flex gap-2">
                                 <div className="w-9 h-9 rounded border border-gray-200 flex items-center justify-center shadow">
                                     <IoSettingsOutline className="text-xl" />
@@ -47,8 +47,11 @@ const Tabs = () => {
                     {/* Table */}
 
 
-                    <section className="mt-5">
 
+
+
+
+                    <section className="mt-5">
                         <div className="relative overflow-x-auto">
                             <table className="w-full text-sm text-left rtl:text-right ">
                                 <thead className="text-xs text-gray-700  bg-gray-50 ">
@@ -227,6 +230,9 @@ const Tabs = () => {
                         </div>
 
                     </section>
+
+
+
 
 
 
