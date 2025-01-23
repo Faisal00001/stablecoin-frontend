@@ -1,6 +1,4 @@
-import {
-    createBrowserRouter,
-} from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
 import MainLayout from "../Layout/MainLayout";
 import Login from "../Pages/Login/Login";
@@ -13,47 +11,25 @@ import Home from "../Pages/Home/Home";
 import StableCoinBalanceManagement from "../Dashboard/StableCoinBalanceManagement/StableCoinBalanceManagement";
 import TransactionsHistory from "../Dashboard/TransactionsHistory/TransactionsHistory";
 
-const router = createBrowserRouter([
-    {
-        path: "/",
-        element: <MainLayout></MainLayout>,
-        children: [
-            {
-                path: '/',
-                element: <Home></Home>
-            },
-            {
-                path: '/login',
-                element: <Login></Login>
-            },
-            {
-                path: '/register',
-                element: <Register></Register>
-            }
-        ],
+const Router = () => {
+  return (
+    <Routes>
+      {/* Main Layout Routes */}
+      <Route path="/" element={<MainLayout />}>
+        <Route index element={<Home />} />
+        <Route path="login" element={<Login />} />
+        <Route path="register" element={<Register />} />
+      </Route>
 
-    },
-    {
-        path: 'dashboard',
-        element: <Dashboard></Dashboard>,
-        children: [
-            {
-                path: 'overview',
-                element: <Overview></Overview>
-            },
-            {
-                path: 'stableCoinBalanceManagement',
-                element: <StableCoinBalanceManagement></StableCoinBalanceManagement>
-            },
-            {
-                path: 'transactionHistory',
-                element: <TransactionsHistory></TransactionsHistory>
-            },
-            {
-                path: 'myWallet',
-                element: <MyWallet></MyWallet>
-            }
-        ]
-    }
-]);
-export default router
+      {/* Dashboard Layout Routes */}
+      <Route path="dashboard" element={<Dashboard />}>
+        <Route path="overview" element={<Overview />} />
+        <Route path="stableCoinBalanceManagement" element={<StableCoinBalanceManagement />} />
+        <Route path="transactionHistory" element={<TransactionsHistory />} />
+        <Route path="myWallet" element={<MyWallet />} />
+      </Route>
+    </Routes>
+  );
+};
+
+export default Router;
